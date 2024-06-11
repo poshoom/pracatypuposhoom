@@ -1,0 +1,242 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoHeader{
+    margin: 0;
+    height: 10vh;
+}
+
+.sideMenu{
+    border: none;
+    background-color: transparent;
+}
+
+.menuHeader, .cartHeader, .userHeader{
+    margin: 0;
+    height: 5vh;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.social-media a img{
+    height: 5vh;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links a,
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.payment-methods img {
+    max-width: 100%;
+}
+
+#menuButton {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+}
+
+#menuButton img{
+    height: 5vh;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 32px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+    color: black;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+.newCollection{
+    height: 50vh;
+}
+
+.slideshow{
+    height: 75vh;
+    width: 100%;
+    position: relative;
+}
+
+@keyframes firstFade{
+    0%{
+        opacity: 1;
+    }
+    33%{
+        opacity: 0;
+    }
+    67%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes secondFade{
+    0%{
+        opacity: 0;
+    }
+    33%{
+        opacity: 1;
+    }
+    67%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes thirdFade{
+    0%{
+        opacity: 0;
+    }
+    33%{
+        opacity: 0;
+    }
+    67%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.firstSlide{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: firstFade 15s ease-in-out infinite alternate;
+}
+
+.secondSlide{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: secondFade 15s ease-in-out infinite alternate;
+}
+
+.thirdSlide{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: thirdFade 15s ease-in-out infinite alternate;
+}
+
+.slideshow img:nth-of-type(1){
+    animation-delay: 0s;
+}
+
+.slideshow img:nth-of-type(2){
+    animation-delay: 5s;
+}
+
+.slideshow img:nth-of-type(3){
+    animation-delay: 10s;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}

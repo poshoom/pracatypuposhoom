@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function() {
+            document.getElementById('sidebar').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+        });
+
+        document.getElementById('closeButton').addEventListener('click', function() {
+            document.getElementById('sidebar').style.width = '0';
+            document.getElementById('main').style.marginLeft= '0';
+            document.getElementsByClassName('container').style.marginLeft= '0';
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <header>
+        <div class="container">
+            <button id="menuButton">
+                <img src="./icons/white-menu-icon.png" alt="">
+            </button>
+        <nav id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" id="closeButton">&times;</a>
+            <a href="./top.html">top</a>
+            <a href="./bottom.html">bottom</a>
+            <a href="./accessories.html">accessories</a>
+        </nav>
+
+    <script src="script.js"></script>
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./logos/nowe logo/poshoom-high-resolution-logo-white-transparent.png" alt="" class="logoHeader">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./icons/white-shopping-cart.png" alt="Cart" class="cartHeader">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icons/white-user.png" alt="User" class="userHeader">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="./icons/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="./icons/tiktok.png" alt="tikok"></a>
+                <a href="#"><img src="./icons/facebook.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    AOS.init();
+</script>
+</html>
